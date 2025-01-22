@@ -1,0 +1,11 @@
+from User import User
+from card import Card
+Alex=User("Alex")
+
+
+Alex.sayName ()
+Alex.setAge (33)
+Alex.sayAge ()
+card=Card ("43443 34343 2323 2323", "11/28","Alex F")
+Alex.addCard (card)
+Alex.getCard (). pay(1000)

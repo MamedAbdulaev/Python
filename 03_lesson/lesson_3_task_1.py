@@ -1,7 +1,5 @@
 from user import User
-
-my_user = User("Анна","Шашкина")
-
-my_user.printFirstName()
-my_user.printLastName()
-my_user.printAllName()
+my_user = User ("Mamed", "Abdulaev")
+my_user.printfname()
+my_user.printlname()
+my_user.printfullname ()

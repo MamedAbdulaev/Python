@@ -1,5 +1,5 @@
 class Smartphone:
-    def __init__(self, brand, model, number):
-        self.bvalue = brand
-        self.mvalue = model
-        self.nvalue = number
+    def __init__(self,vendor,model,num):
+        self.vendor=vendor
+        self.model=model
+        self.num=num

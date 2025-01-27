@@ -1,9 +1,7 @@
 from address import Address
 from mailing import Mailing
-
-to_address = Address(213188, "Круглое", "Партизанская", 1, 1)
-from_address = Address(249038, "Обнинск", "Ленина", 88, 88)
-
-sending = Mailing(to_address, from_address, 1000, 13572468)
-
-print(f"Отправление {sending.tck} из {from_address.ivalue}, {from_address.cvalue}, {from_address.svalue}, {from_address.hvalue} - {from_address.avalue} в {to_address.ivalue}, {to_address.cvalue}, {to_address.svalue}, {to_address.hvalue} -{to_address.avalue}. Стоимость {sending.ct} рублей.")
+to_address= Address ("344000","Ростов","ул.Комсомольская", "д.135", "141")
+from_address= Address ("355000","Ставрополь", "ул.Чапаева","д.4","463")
+mailing = Mailing (to_address,from_address,1000,"5qwer")
+print (f"Отправление {mailing.track} из {from_address.city},{from_address.street},{from_address.home}-{from_address.flat} в {to_address.city},{to_address.street},{to_address.home}-{to_address.flat}.Стоимость {mailing.cost} рублей."
+)

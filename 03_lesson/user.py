@@ -1,13 +1,13 @@
 class User:
-    def __init__(self, first_name, last_name):
-        self.fname = first_name
-        self.lname = last_name
-    
-    def printFirstName(self):
-        print(self.fname)
+    def __init__(self,first_name,last_name):
+        self.fname=first_name
+        self.lname=last_name
 
-    def printLastName(self):
-        print(self.lname)
+    def printfname (self):
+        print (self.fname)
 
-    def printAllName(self):
-        print(self.fname, self.lname)
+    def printlname (self):
+        print (self.lname)
+
+    def printfullname (self):
+        print (self.fname,self.lname)

@@ -1,5 +1,5 @@
 import pytest
-from calculator import Calculator
+from lesson4.calculator import Calculator
 calculator = Calculator()
 @pytest.mark.parametrize ('num1,num2,result', [(4,5,9), (-6, -10, -16), (-6,6,0), (5.61,4.39,10), (10,0,10)])
 def testsumnums (num1,num2,result):

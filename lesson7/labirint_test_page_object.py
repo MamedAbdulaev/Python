@@ -7,23 +7,23 @@ from pages.ResultPage import ResultPage
 from pages.CartPage import CartPage
 from time import sleep
 
-# def test_card_counter():
-#     browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+def test_card_counter():
+    browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     
-#     main_page = MainPage(browser)
-#     main_page.set_cookie_policy()
-#     main_page.search('java')
+    main_page = MainPage(browser)
+    main_page.set_cookie_policy()
+    main_page.search('java')
    
-#     result_page= ResultPage(browser)
-#     to_be = result_page.add_books()
+    result_page= ResultPage(browser)
+    to_be = result_page.add_books()
     
-#     cart_page=CartPage(browser)
-#     cart_page.get()
-#     as_is = cart_page.get_counter()
+    cart_page=CartPage(browser)
+    cart_page.get()
+    as_is = cart_page.get_counter()
 
-#     assert as_is==to_be
+    assert as_is==to_be
 
-#     browser.quit()
+    browser.quit()
 
 
 def test_empty_search_result():
